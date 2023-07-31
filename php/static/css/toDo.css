@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    background-color: cornflowerblue;
+}
+.maindiv{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: cornflowerblue;
+    padding-bottom: 30px;
+}
+.input1{
+    width: 105px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // let marks = [10,20,40,80];
+        // // console.log(marks[2]);
+        // var lngth = marks.length;
+        // // console.log(marks.length);
+        // for(let i = 0; i < lngth; i++){
+        //     console.log(marks[i])
+        // }
+
+        //----------------------------------------------------------------------------------------------
+
+        // let num = [1,2,3,4,5,6,7,8,9,10];
+        // var lngth = num.length;
+        // for(let i = 0; i < lngth; i++)
+        // {
+        //     if(num[i] % 2 == 0)
+        //     {
+        //         console.log('number', num[i], 'index no.', i);
+        //     }
+        // }
+        //--------------------------------------------------------------------------------------------
+        // var mark = 90
+        // if(mark >= 80)
+        // {
+        //     console.log('A grade');
+        // }
+        // else if(mark >= 70)
+        // {
+
+        // }
+
+        //-------------------------------------------------------------------------------------------
+
+        // var num = parseInt(prompt('Enter the number'))
+        // let numArray = [1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,10]
+        // var lngth = numArray.length
+        // var found = 0;
+        // var count = 0;
+        // for(let i = 0; i < lngth; i++)
+        // {
+        //     if(numArray[i] == num)
+        //     {
+        //          found = 1
+        //          count++
+        //     }
+
+        // }
+        // if(found == 1)
+        // {
+        //     console.log('Found',count)
+        // }
+        // else
+        // {
+        //     console.log('Not found')
+        // }
+
+        //------------------------------------------------------------------------------------------
+
+        // for(let i = 0; i<=10; i++){
+        //     if(i == 5){
+        //         continue;
+        //     }
+        //     console.log(i);
+        // }
+
+        //------------------------------------------------------------------------------------------
+
+        let aray1 = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+        let aray2 = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+        var lgt1 = aray1.length;
+        var lgt2 = aray2.length;
+        var flag = 0;
+        if (lgt1 == lgt2) {
+
+            // for(let i = 0; i < lgt1; i++){
+            //        if(aray1[i] == aray2[i]){
+            //         found++
+            //        }
+            //     }
+            //     if(found == lgt1)
+            //     {
+            //         console.log('Array elements same');
+            //     }
+            //     else{
+            //     console.log('array elements different')
+            //     }
+
+            for (let i = 0; i < lgt1; i++) {
+                if (aray1[i] != aray2[i]) {
+                    flag = 1
+                }
+            }
+            if (flag == 1) {
+                console.log('Array elements different');
+            }
+            else {
+                console.log('array elements same')
+            }
+
+        }
+        else {
+            console.log('array length different')
+        }
+
+
+    </script>
+
+</body>
+
+</html>

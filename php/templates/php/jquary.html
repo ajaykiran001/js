@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+
+    <style>
+        #fDiv {
+            /* display: none; */
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="fDiv" style="height: 100px; width: 200px; background-color: cadetblue;">
+    </div>
+    <button id="sButton"
+        style="background-color: burlywood; padding-left: 35px; padding-right: 35px; padding-top: 15px; padding-bottom: 15px; border-radius: 15px; margin-top: 30px; margin-left: 10px;">Submit</button>
+
+    <script src="{% static 'js/jquary.js' %}"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('#sButton').click(function(){
+                // $('#fDiv').hide()
+                // $('#fDiv').show()
+                // $('#fDiv').toggle()
+                // $('#fDiv').fadeIn(3000)
+                // $('#fDiv').fadeOut(3000)
+                // $('#fDiv').fadeTo(3000,0.5)
+                // $('#fDiv').fadeToggle(2000)
+                // $('#fDiv').slideUp()
+                // $('#fDiv').slideDown()
+                // $('#fDiv').slideToggle()
+
+                // $('#fDiv').animate({
+                //     left : '300px',
+                //     width : '70%',
+                // }).animate({
+                //     top : '200px'
+                // })
+
+
+
+
+            })
+
+
+            $('#fDiv').click(function(){
+                $(this).animate({
+                    left: '1400px',
+                    width : '20px'
+                },6000).delay(2000).animate({
+                    top: '700px',
+                    height : '20px'
+                },4000).delay(2000).animate({
+                    top : '0px',
+                    height : '100px'
+                },4000).delay(2000).animate({
+                    left : '0px',
+                    width : '200Px'
+                },6000)
+            })
+
+
+        })
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/dom_calculator.css' %}">
+</head>
+<body>
+    <table align="center">
+        <tr style="text-align: center;">
+            <td colspan="4"><input type="text" placeholder="0" class="input1" id="input1"></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td><button class="button1" onclick="numberOnClick(1)">1</button></td>
+            <td><button class="button1" onclick="numberOnClick(2)">2</button></td>
+            <td><button class="button1" onclick="numberOnClick(3)">3</button></td>
+            <td><button class="button2" onclick="operation(1)">+</button></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td><button class="button1" onclick="numberOnClick(4)">4</button></td>
+            <td><button class="button1" onclick="numberOnClick(5)">5</button></td>
+            <td><button class="button1" onclick="numberOnClick(6)">6</button></td>
+            <td><button class="button2" onclick="operation(2)">-</button></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td><button class="button1" onclick="numberOnClick(7)">7</button></td>
+            <td><button class="button1" onclick="numberOnClick(8)">8</button></td>
+            <td><button class="button1" onclick="numberOnClick(9)">9</button></td>
+            <td><button class="button2" onclick="operation(3)">×</button></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td colspan="2"><button class="button3" onclick="numberOnClick(0)">0</button></td>
+            <td><button class="button2" onclick="equalto()">=</button></td>
+            <td><button class="button2" onclick="operation(4)">÷</button></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td colspan="4"><button class="buttonClear" onclick="clearValue()">CLEAR</button></td>
+        </tr>
+    </table>
+
+    <script>
+        let firstNumber = 0;
+        let secondNumber = 0;
+        let operationValue = 0;
+        let result = 0;
+
+        function numberOnClick(num){
+            document.getElementById('input1').value = document.getElementById('input1').value + num
+        }
+
+        function operation(value){
+            firstNumber = parseInt(document.getElementById('input1').value);
+            document.getElementById('input1').value = '';
+            operationValue = value;
+        }
+
+        function equalto(){
+            secondNumber = parseInt(document.getElementById('input1').value);
+            if(operationValue == 1){
+                result = firstNumber + secondNumber
+                document.getElementById('input1').value = result
+            }
+            else if(operationValue == 2){
+                result = firstNumber - secondNumber
+                document.getElementById('input1').value = result
+            }
+            else if(operationValue == 3){
+                result = firstNumber * secondNumber
+                document.getElementById('input1').value = result
+            }
+            else if(operationValue == 4){
+                result = firstNumber / secondNumber
+                document.getElementById('input1').value = result
+            }
+        }
+        
+        function clearValue(){
+            document.getElementById('input1').value = '';
+        }
+         
+    </script>
+</body>
+</html>

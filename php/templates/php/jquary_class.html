@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquary class</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <style>
+        .p2 {
+            font-weight: bold;
+        }
+
+        .p1 {
+            color: cadetblue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur aspernatur suscipit minima
+        explicabo repudiandae, laboriosam numquam aliquam esse ab quaerat veniam fugit voluptas asperiores, deleniti
+        velit ut, illo similique maiores!</p>
+    <button id="sButton">Submit</button>
+
+
+    <div>
+        <ul>
+            <li id="li1">
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, repellat!</span>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, repellat!</span>
+                <span id="txt1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, repellat!</span>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, repellat!</span>
+                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, inventore!</h1>
+            </li>
+            <li>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, repellat!</span>
+            </li>
+            <li>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, repellat!</span>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+
+        $(document).ready(function () {
+            // $('#sButton').click(function(){
+
+            //     // $('div').addClass('p1')
+            // })
+            $('#sButton').click(function () {
+                // console.log($('#txt1').parents());
+                // $('#txt1').parent().css({ "background-color": "cadetblue", "color": "darkred" })
+                // $('#li1').siblings().css({"background-color":"red"})
+                // $('#txt1').siblings().css({"background-color":"yellow","color":"red"})
+                $('span').eq(2).css({ "background-color": "cadetblue", "color": "darkred" })
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+    {% comment %}
+
+    <button onclick="alert('Warning')">Click here</button>
+    <script>
+        alert('Fill the form')
+    </script>
+
+    {% endcomment %}
+
+
+    <!-- <script>
+
+        // data type
+        // number 
+        // string 
+        // boolean 
+        // array
+        //object
+
+            // statically/strongly typed - c,c++, java
+            // weakly/dynamic typed - javascript, python
+//    String name = 'ajay'
+// int age = 20
+// name = 'ajay'
+
+// keywords - let, var, const
+
+        // var userName = 'ajay';
+        // var age = 25;
+
+        // console.log('hi you username is ', userName)
+
+    </script>
+
+
+<-- <script>
+    var studentId = prompt('Please enter StudentId');
+    var admissionNo = prompt('Please enter AdmissionNo');
+    var username = prompt('Please enter Username');
+    var marks = [90, 92, 85];
+    var student = {'name':'joseph', 'age':'20'};
+
+    console.log(studentId)
+    console.log(admissionNo)
+    console.log(username)
+    console.log(marks)
+    console.log(student)
+
+    var c = confirm('do you want to close window')
+    console.log(c)
+</script> -->
+
+    <!-- <script> -->
+    <!-- // var a = 10;
+    // var b = 20;
+    // var c = 30;
+    // var d = 40;
+    //         // T          T
+    // var f = !((a < b) || (c < d))
+    // console.log(f)
+    // var add = a + b;
+    // var sub = a - b;
+    // var multi = a * b;
+    // var div = a / b;
+    // var mod = a % b;
+    // a--
+
+    // console.log(add)
+    // console.log(sub)
+    // console.log(multi)
+    // console.log(div)
+    // console.log(mod)
+    // console.log(a)
+
+//   a **= 20  //a = a + 20
+//   var c = a !== b
+
+//   console.log(c)
+//   console.log(a) -->
+    <!-- </script>  -->
+
+    <script>
+
+        // var i = 0
+
+        // for(; i <= 10;){
+        //     document.write(i);
+        //     ++i;
+        // }
+
+        // var i = 1;
+        // // var j = ++i;
+
+        // document.write(++i , '<br>')
+        // // var k = i++;
+        // document.write(i , '<br>')
+        // document.write(++i)
+
+        //--------------------------------------------------------------------------------------
+
+        // var i = 10;
+        // for(; i >= 0;){
+        //     document.write(i ,'<br>')
+        //     i--
+        // }
+
+
+        //---------------------------------------------------------------------------------------
+
+        // let names =['a','b','c','d','f'];
+        // var lgt = names.length;
+        // for(let i = 0; i < lgt; i++){
+        //     document.write(names[i],'<br>')
+        // }
+
+        //-------------------------------------------------------------------------------------
+
+        // var products = [[1,'Soap',30],[2,'Headphones',999],[3,'Cooling glass',500],[4,'Mug',100],[5,'Plate',150]];
+        // var lgt = products.length
+        // for(i=0; i < productlgt; i++){
+        //     document.write(products[i],'<br>');
+        // }
+
+        // for(let i = 0; i < lgt; i++){
+        //     document.write(products[i][1],'<br>')
+        // }
+
+        // document.write('<table border=1 align=center>');
+        //     document.write('<tr>')
+        //         document.write('<td>','No','</td>')
+        //         document.write('<td>','Product','</td>')
+        //         document.write('<td>','Prize','</td>')
+        //     document.write('</tr>')
+
+        //         for(let i = 0; i < lgt; i++){
+        //             document.write('<tr>')
+        //             document.write('<td>'+products[i][0],'</td>')
+        //             document.write('<td>'+products[i][1],'</td>')
+        //             document.write('<td>'+products[i][2],'</td>')
+        //             document.write('</tr>')
+        //         }
+
+        // document.write('<tr>')
+        //     document.write('<td>'+products[1][0],'</td>')
+        //     document.write('<td>'+products[1][1],'</td>')
+        //     document.write('<td>'+products[1][2],'</td>')
+        // document.write('</tr>')
+        // document.write('<tr>')
+        //     document.write('<td>'+products[2][0],'</td>')
+        //     document.write('<td>'+products[2][1],'</td>')
+        //     document.write('<td>'+products[2][2],'</td>')
+        // document.write('</tr>')
+        // document.write('<tr>')
+        //     document.write('<td>'+products[3][0],'</td>')
+        //     document.write('<td>'+products[3][1],'</td>')
+        //     document.write('<td>'+products[3][2],'</td>')
+        // document.write('</tr>')
+        // document.write('<tr>')
+        //     document.write('<td>'+products[4][0],'</td>')
+        //     document.write('<td>'+products[4][1],'</td>')
+        //     document.write('<td>'+products[4][2],'</td>')
+        // document.write('</tr>')
+        // document.write('</table>')
+
+        //--------------------------------------------------------------------------------------------------
+
+        var num = prompt('Enter a product')
+        var arrey = [[1, 'p1', 30],[2, 'p2', 200],[3, 'p3', 300]];
+        var lgt = arrey.length;
+        var found = 0;
+
+        for (let i = 0; i < lgt; i++) {
+            if (arrey[i][1] == num) {
+                found = 1
+                break
+            }
+        }
+        if (found == 1) {
+            document.write('Product prize',arrey[i],2)
+        }
+        else {
+            document.write('Product is not present')
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.mainDiv{
+padding-top: 50px;
+padding-bottom: 50px;
+padding-left: 300px;
+padding-right: 300px;
+background-color: burlywood;
+}
+.borderDiv{
+ border: 1px solid black;
+ border-radius: 25px;
+ padding: 40px;
+ background-color: cadetblue;
+}

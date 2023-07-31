@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <ul id="list">
+        <li>html</li>
+        <li>css</li>
+        <li>bootstrap</li>
+        <li>javascript</li>
+    </ul>
+    <button id="sButton">Submit</button>
+
+
+    <script>
+        $(document).ready(function(){
+            $('#sButton').click(function(){
+                // $('#list').empty()        //To remove children of an element
+                $('#list').remove()          //To remove the element
+            })
+        })
+    </script>
+</body>
+</html>
